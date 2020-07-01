@@ -29,7 +29,7 @@ std::string completion_handler_fun(float f, std::string str)
     return str;
 }
  
-int main1()
+int main1() 
 {
     boost::asio::io_service io;
     io.post(boost::bind(completion_handler_fun, 3.141592653f, "111"));
